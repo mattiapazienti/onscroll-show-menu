@@ -17,21 +17,21 @@
     });
    
    
-// SCROLL PART   
-var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF doesn't recognize mousewheel as of FF3.x
-$('body').bind(mousewheelevt, function(e){
+    // SCROLL PART      
+    var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF
+    $('body').bind(mousewheelevt, function(e){
 
-    var evt = window.event || e //equalize event object     
-    evt = evt.originalEvent ? evt.originalEvent : evt; //convert to originalEvent if possible               
-    var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta //check for detail first, because it is used by Opera and FF
+        var evt = window.event || e   
+        evt = evt.originalEvent ? evt.originalEvent : evt;           
+        var delta = evt.detail ? evt.detail*(-40) : evt.wheelDelta 
 
-    if(delta > 0) {
-          $('#nav').slideDown(300);  
-    }
-    else{
-        $('#nav').slideUp(300);
-    }   
-});
+        if(delta > 0) {
+            $('#nav').slideDown(300);  
+        }
+        else{
+            $('#nav').slideUp(300);
+        }   
+    });
 
     
 })(jQuery);
