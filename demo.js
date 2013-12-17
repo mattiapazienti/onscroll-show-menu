@@ -1,5 +1,6 @@
 (function ($) {
     
+    // TOGGLE MENU
     wrapper = $('body');
     el = wrapper.find('.mobile'); 
     act = el.children().children();
@@ -17,7 +18,7 @@
     });
    
    
-    // SCROLL PART      
+    // SCROLL PART - not working on iOS Iphone - May use responseJS
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF
     $('body').bind(mousewheelevt, function(e){
 
