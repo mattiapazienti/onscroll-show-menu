@@ -18,7 +18,7 @@
     });
    
    
-    // SCROLL PART - not working on iOS Iphone - May use responseJS
+    // SCROLL PART - not working on iOS Iphone - May use responseJS or jgesture
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF
     $('body').bind(mousewheelevt, function(e){
 
