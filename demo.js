@@ -18,7 +18,7 @@
     });
    
    
-    // SCROLL PART - not working on iOS Iphone - May use responseJS or jgesture
+    // SCROLL PART - ONLY DESKTOP - FOR MOBILE CHECK REPO
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF
     $('body').bind(mousewheelevt, function(e){
 
