@@ -18,7 +18,7 @@
     });
    
    
-    // SCROLL PART - ONLY DESKTOP - FOR MOBILE CHECK REPO
+    // SCROLL PART - ONLY DESKTOP - FOR MOBILE CHECK SWIPE MENU REPO
     var mousewheelevt = (/Firefox/i.test(navigator.userAgent)) ? "DOMMouseScroll" : "mousewheel" //FF
     $('body').bind(mousewheelevt, function(e){
 
